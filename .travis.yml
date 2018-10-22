@@ -38,7 +38,7 @@ matrix:
 install:
   - pip install -U tox tox-travis codecov
 
-script: tox -e ${TOXENV}
+script: tox
 
 after_success:
   - codecov
