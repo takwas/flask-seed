@@ -25,15 +25,13 @@ setup(
     long_description=readme + '\n\n' + history,
     author="Luke Smith",
     author_email='lsmith@zenoscave.com',
-    url='https://github.com/LSmith-Zenoscave/flask_seed',
+    url='https://github.com/LSmith-Zenoscave/flask-seed',
     packages=[
         'flask_seed',
     ],
-    package_dir={'flask_seed':
-                 'flask_seed'},
     entry_points={
-        'console_scripts': [
-            'flask_seed=flask_seed.cli:main'
+        'flask.commands': [
+            'seed=flask_seed:Seed'
         ]
     },
     include_package_data=True,
@@ -47,12 +45,13 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     test_suite='tests',
     tests_require=test_requirements
