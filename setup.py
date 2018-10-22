@@ -11,11 +11,17 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
-    # TODO: put package requirements here
+    'flask',
+    'flask_script',
+    'SQLAlchemy'
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'tox',
+    'flake8',
+    'pytest',
+    'pytest-cov',
+    'flask_sqlalchemy'
 ]
 
 setup(
